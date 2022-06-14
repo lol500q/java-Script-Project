@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="gamelogo.webp">
+    <title>My Game</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="align-self:center;font-size: 70px;">Rock Paper Scissors Game</h1>
+        <div class="box1">
+        <div class="notation">
+        <p class="please">Please click on of the buttons here</p>
+            </div>
+        <div class="button-container">
+            
+            <button class="buttons" id="paper" onClick='setUserChoice("Paper")' type="button">
+                <image class="image-paper images" src="paper.png" alt="sorry we cant display this image">
+                    <image class="image-water images" src="water.png" style="display:none;" alt="sorry we cant display this image">
+            </button>
+            <button id="rock" onClick='setUserChoice("Rock")' type="button">
+                <image class="image-rock images" src="rockhand.png" alt="sorry we cant display this image">   
+                    <image class="image-fire images" style="display:none;" src="fire.png" alt="sorry we cant display this image"> 
+                
+            </button>
+            <button id="scissors" onClick='setUserChoice("Scissors")' type="button">
+                <image class="image-scissors images" src="handscissors.png" alt="sorry we cant display this image">
+                    <image class="image-wood images" src="wood.png" style="display:none;" alt="sorry we cant display this image">
+            </button>
+            </div>
+            </div>
+            <div class="boxOfTwo">
+            <div class="player-container">
+                <image class="user-image" src="user.png" alt="sorry we cant display this image">
+                <h4>Player Choice</h4>
+             <p id="playerChoice"></p>
+            </div>
+            <div class="computer-container">
+                <image class="computer-image" src="robot.png" alt="sorry we cant display this image">
+              <h4>Computer Choice</h4>
+              <p id="computerChoice"></p>
+                </div>
+            </div>
+            <div class="score">
+                <div class="player-Score">
+                    <h4>Player Score</h4>
+                    <p id="playerValue">0</p>
+                    </div>
+                    <div class="computer-Score">
+                    <h4>Computer Score</h4>
+                    <p id="computerValue">0</p>
+                    </div>
+            </div>
+                <div class="result-container">
+                    <div class="result-Container2">
+                    <h4 style="text-align: center;">result</h4>
+                    <p id="result"></p>
+                    <div class="Won" id="Won" style="display:none;">
+                        <P>you Won</P>
+                       <image class="winner-image"  src="winner.png" width="100px" height="100px" alt="sorry we cant display this image"> 
+                    </div>
+                    <div class="Lost" id="Lost" style="display:none;">
+                        <P> You Lost You Sucker </P>
+                        <image class="loser-image" src="loser.png" width="100px" height="100px" alt="sorry we cant display this image">
+                    </div>
+                </div>
+                    <div class="button-content">
+                    <Button id="again" style="background-color: white;color: lightgreen; width:150px" type="button" onClick="playAgain()">Reset</Button>
+                    <Button id="change" style="background-color: white;color: lightgreen; width:500px;" type="button" onclick="changeView()">Change it to Water Fire Wood</Button>
+                </div>
+                    </div>
+                    
+                    
+    </div>
+</body>
+<script src="script.js"></script>
+</html>

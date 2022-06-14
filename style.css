@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Tajawal:wght@300&display=swap');
+
+*{
+    font-family: 'Oswald', sans-serif;
+    
+}
+body{
+    margin:0px;
+    
+}
+
+.container{
+  background-color: lightgreen;
+  display:flex;
+  flex-direction: column;
+  height:2000px;
+
+}
+.please{
+    font-size:30px;
+}
+.button-container{
+    align-self: center;
+    margin:10px;
+}
+.box1{
+    display:flex;
+    flex-direction: row;
+}
+button{
+    background-color: lightgray;
+    color:white;
+    font-size: 50px;
+    border-radius: 50%;
+    padding:10px;
+}
+.image-scissors{
+    width:50px;
+    height:50px;
+    
+}
+.image-rock{
+    width:50px;
+    height:50px;
+
+}
+.image-paper{
+    width:50px;
+    height:50px;
+}
+.please{
+    margin:0px 10px;
+    font-weight: bold;
+}
+.boxOfTwo{
+    display:flex;
+    flex-direction: row;
+    font-size:50px;
+    align-self: center;
+    
+}
+#computerChoice{
+    margin:0px 30px 0px 30px;
+    width:200px;
+    height:150px;
+    background-color: purple;
+    color: white;
+    border-radius:50%;
+    padding:10px;
+    text-align: center;
+}
+#playerChoice{
+    margin:0px 30px 0px 30px;
+    width:200px;
+    height:150px;
+    background-color: purple;
+    color: white;
+    border-radius:50%;
+    padding:10px;
+    text-align: center;
+    
+
+}
+h4{
+    margin:5px 30px;
+}
+.user-image{
+    width:100px;
+    height:100px;
+    margin:0px 30px;
+    padding: 10px;
+}
+.computer-image{
+    width:100px;
+    height:100px;
+    margin:0px 30px;
+    padding: 10px;
+    
+}
+.result-container{
+    font-size: 50px;
+    align-self: center;
+
+}
+.box1{
+    align-self:center;
+}
+
+.score{
+    display:flex;
+    flex-direction: row;
+    align-self: center;
+}
+.computer-Score{
+    font-size:35px;
+}
+.player-Score{
+    font-size:35px;
+}
+#ComputerValue{
+    margin: 5px 30px;
+}
+#PlayerValue{
+    margin: 5px 30px;
+    
+}
+.image-fire{
+    width:50px;
+    height:50px;
+   
+}
+.image-water{
+    width:50px;
+    height:50px;
+    
+}
+.image-wood{
+    width:50px;
+    height:50px;
+}
+.Lost{
+    text-align: center;
+    margin:5px 30px;
+    padding:10px;
+}
+.Won{
+    text-align: center;
+    margin:5px 30px; 
+    padding:10px;
+}
+.loser-image{
+    align-self: center;
+}
+.winner-image{
+    align-self: center;
+}
+
