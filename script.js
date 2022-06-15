@@ -15,6 +15,7 @@ let imagesElements=document.getElementsByClassName("images");
 let array1=["water","fire","wood"];
 let WonElement=document.getElementById("Won");
 let LostElement=document.getElementById("Lost");
+let isChanged= false;
 
 
 
@@ -131,27 +132,21 @@ function whoWon(userChoice,computer){
             resultElement.innerHTML = "draw";
             return 0;
          } else if(userChoice==="water" && computer==="fire"){
-             playerScoreElement.innerHTML = ""+(++playerValue);
              return 1;
          }
          else if(userChoice==="water" && computer==="wood"){
-             computerScoreElement.innerHTML = ""+(++computerValue);
              return -1;
          }
          else if(userChoice==="wood" && computer==="fire"){
-             computerScoreElement.innerHTML = ""+(++computerValue);
              return -1;
          }
          else if(userChoice==="wood" && computer==="water"){
-             playerScoreElement.innerHTML = ""+(++playerValue);
              return 1;
          }
          else if(userChoice==="fire" && computer==="water"){
-             computerScoreElement.innerHTML = ""+(++computerValue);
              return -1;
          }
          else if(userChoice==="fire" && computer==="wood"){
-             playerScoreElement.innerHTML = ""+(++playerValue);
              return 1;
          }
     }
@@ -160,6 +155,14 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
  }
  function changeView(){
+    if(isChanged ==  true){
+        document.getElementById("change").innerHTML="change to Water Wood Fire";
+        isChanged=false;
+    }
+    else{
+        document.getElementById("change").innerHTML="change Rock Paper Scissors";
+        isChanged = true;
+    }
     Array.prototype.forEach.call(imagesElements, element => {
         
             if(element.style.display === "none"){
